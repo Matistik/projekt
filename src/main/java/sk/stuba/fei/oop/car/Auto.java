@@ -14,7 +14,7 @@ public class Auto {
     }
 
     public Auto(){
-        kapacitaNadrze = 100;
+        this(100);
     }
 
 
