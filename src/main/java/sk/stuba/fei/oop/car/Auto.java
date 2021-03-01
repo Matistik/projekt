@@ -4,8 +4,8 @@ public class Auto {
 
     private static final double FUEL_PER_KM= 0.5; //pri konstatne davam static, ked je final neda sa menit
 
-    public double kapacitaNadrze;
-    public double stavNadrze;
+    private double kapacitaNadrze;
+    private double stavNadrze;
 
     public void drive(double distanceInKm){
        // this.stavNadrze -= distanceInKm * Auto.FUEL_PER_KM;
@@ -15,4 +15,14 @@ public class Auto {
         }
 
     }
+
+    public double getStavNadrze(){
+        return stavNadrze;
+    }
+
+    public void setStavNadrze(double stavNadrze){
+        this.stavNadrze = stavNadrze;
+    }
+
+
 }
