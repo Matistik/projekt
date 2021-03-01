@@ -2,13 +2,16 @@ package sk.stuba.fei.oop.car;
 
 public class Auto {
 
-    private static final double FUEL_PER_KM= 0.5; //pri konstatne davam static, ked je final neda sa menit
+    private static final double FUEL_PER_KM= 0.2; //pri konstatne davam static, ked je final neda sa menit
 
     private double kapacitaNadrze;
     private double stavNadrze;
-    private boolean neojazdene = true;
+    private boolean neojazdene;
 
-
+    public Auto(){
+        neojazdene = true;
+        kapacitaNadrze = 100;
+    }
 
     public void drive(double distanceInKm){
        // this.stavNadrze -= distanceInKm * Auto.FUEL_PER_KM;
@@ -24,8 +27,10 @@ public class Auto {
         return stavNadrze;
     }
 
-    public void setStavNadrze(double stavNadrze) {
-        this.stavNadrze = stavNadrze;
+    public double dotankovat(){
+        double diff = kapacitaNadrze - stavNadrze;
+        stavNadrze = kapacitaNadrze;
+        return diff;
     }
 
     public boolean isNeojazdene() {
