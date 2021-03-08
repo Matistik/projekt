@@ -16,9 +16,11 @@ public class Main {
 
         contacts1[0].setFirstName("Mato");
 
-        contact.setFriends(contact2,contact3,contact4);
+        contact.setFriends(contact4,contact3,contact2);
 
         contact3.setFirstName("kovy");
+
+        contact.getFriends()[0].setFirstName("Gabo");
 
 
 
