@@ -10,7 +10,7 @@ public class Contact {
         this.surname = surname;
     }
 
-    private Contact[] friends;
+    protected Contact[] friends;
 
     public Contact(String fullName){
         var parts = fullName.split(" ");
@@ -48,5 +48,9 @@ public class Contact {
             friendsClone[i] = new Contact(this.friends[i]);
         }
         return friendsClone ;
+    }
+
+    public String akoText(){
+        return String.format("%s %s", this.firstName, this.surname);
     }
 }
