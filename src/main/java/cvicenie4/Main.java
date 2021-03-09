@@ -3,14 +3,14 @@ package cvicenie4;
 public class Main {
 
     public static void main(String[] args) {
-        var student = new Contact("Jozko Mrkvicka");
+
         var absolvent = new Graduate("Ing.", "Tomas", "Kovacik");
 
-        System.out.println(student.akoText());
+        absolvent.setFriends(new Graduate("Ing.", "asd", "sss"), new Graduate("Ing.", "Tom", "Kova"));
         System.out.println(absolvent.akoText());
         System.out.println(absolvent.akoTextSTitulom());
 
-
+        System.out.println(absolvent);
 
     }
 
