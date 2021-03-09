@@ -16,10 +16,7 @@ public class Cvicenie1a2 {
 
 
 
-
-
-
-        }
+    }
         public static void testAuto(Auto auto){
             System.out.println("Dotankoval som " + auto.dotankovat());
             System.out.println(auto.currentState());

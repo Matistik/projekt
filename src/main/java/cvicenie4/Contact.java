@@ -1,6 +1,6 @@
 package cvicenie4;
 
-public abstract class Contact {
+public abstract class Contact implements Znamy {
 
     private String firstName;
     private String surname;

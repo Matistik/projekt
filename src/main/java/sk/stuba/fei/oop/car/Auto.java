@@ -39,6 +39,7 @@ public class Auto {
     }
 
     public boolean isNeojazdene() {
+
         return neojazdene;
     }
 
